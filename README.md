@@ -1,6 +1,6 @@
 # Microservices Architecture Project
 
-This project demonstrates a robust microservices architecture using Docker, Kubernetes, Skaffold, NATS, Express, TypeScript, and user authentication.
+This project demonstrates a robust microservices architecture using Docker, Kubernetes, Skaffold, NATS, Express, TypeScript, and user authentication. It consists of multiple backend services and a front-end client.
 
 ## Architecture Overview
 
@@ -16,11 +16,14 @@ Our application is built on a microservices architecture, leveraging the followi
 
 ## Services
 
-1. **User Service**: Handles user registration, authentication, and profile management
-2. **Product Service**: Manages product catalog and inventory
-3. **Order Service**: Processes and manages customer orders
-4. **Payment Service**: Handles payment processing and transactions
-5. **Notification Service**: Manages email and push notifications
+Our application consists of the following microservices:
+
+1. **Auth Service**: Handles user authentication and authorization
+2. **Expiration Service**: Manages time-sensitive operations and expirations
+3. **Orders Service**: Processes and manages customer orders
+4. **Payments Service**: Handles payment processing and transactions
+5. **Tickets Service**: Manages ticket creation, updates, and availability
+6. **Client**: Front-end application for user interaction
 
 ## Technologies Used
 
@@ -31,6 +34,7 @@ Our application is built on a microservices architecture, leveraging the followi
 - **Express**: Powers our API endpoints in each service
 - **TypeScript**: Enhances code quality and developer productivity
 - **JWT**: Implements secure user authentication
+
 
 ## Contributing
 
